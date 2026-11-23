@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "VidGrab",
+    "slug": "vidgrab",
+    "version": "1.0.0",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "app.vidgrab.mobile",
+      "infoPlist": { "UIBackgroundModes": ["fetch", "processing"], "NSAppTransportSecurity": { "NSAllowsArbitraryLoads": true } }
+    },
+    "android": {
+      "package": "app.vidgrab.mobile",
+      "usesCleartextTraffic": true,
+      "permissions": ["POST_NOTIFICATIONS", "READ_MEDIA_VIDEO", "READ_MEDIA_AUDIO", "WRITE_EXTERNAL_STORAGE"]
+    },
+    "plugins": [
+      "expo-localization",
+      ["expo-media-library", { "savePhotosPermission": "Save downloaded videos to your gallery" }],
+      "expo-notifications"
+    ]
+  }
+}
